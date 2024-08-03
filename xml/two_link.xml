@@ -34,8 +34,8 @@
 </contact>
 
 <actuator>
-    <position name="joint1" joint="joint1" ctrllimited="true" ctrlrange="-3.14 3.14" kp="5" kv=".2"/>
-    <position name="joint2" joint="joint2" ctrllimited="true" ctrlrange="-3.14 3.14" kp="5" kv=".2"/>
+    <position name="joint1" joint="joint1" ctrllimited="true" ctrlrange="-3.14 3.14" kp="20" kv=".1"/>
+    <position name="joint2" joint="joint2" ctrllimited="true" ctrlrange="-3.14 3.14" kp="20" kv=".1"/>
 </actuator>
 
 </mujoco>
