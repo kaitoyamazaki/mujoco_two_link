@@ -187,8 +187,8 @@ void inverse_jacobian(double theta1, double theta2, double l1, double l2, double
 void move_to_goal() {
     double l1 = 0.1; // リンク1の長さ
     double l2 = 0.1; // リンク2の長さ
-    double step_size = 0.01; // 一度に進むステップサイズ
-    double threshold = 0.01; // 目標位置に近いかどうかを判定する閾値
+    double step_size = 0.02; // 一度に進むステップサイズ
+    double threshold = 0.0005; // 目標位置に近いかどうかを判定する閾値
 
     while (!goal_reached) {
         // 現在のジョイント角度を取得
@@ -267,6 +267,15 @@ void simulate(const char* filename) {
     mjr_defaultContext(&con);
     mjv_makeScene(m, &scn, 2000);
     mjr_makeContext(m, &con, mjFONTSCALE_150);
+
+    // カメラの初期位置を設定
+    cam.type = mjCAMERA_FREE;
+    cam.lookat[0] = 0.0;
+    cam.lookat[1] = 0.0;
+    cam.lookat[2] = 0.0;
+    cam.distance = 0.5; // カメラの距離を近づける
+    cam.azimuth = 90;
+    cam.elevation = -90;
 
     // コールバック関数を設定
     glfwSetMouseButtonCallback(window, mouse_button);
