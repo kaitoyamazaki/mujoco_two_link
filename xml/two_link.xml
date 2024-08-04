@@ -24,6 +24,7 @@
                 <body name="link2">
                     <joint name="joint2" pos=".1 0 .01" axis="0 0 1" range="-3.14 3.14" damping="1"/>
                     <geom mesh="link2"/>
+                    <site name="end_effector" pos=".2 0 .015" size=".01" rgba="1 0 0 1"/>
                 </body>
             </body>
         </body>

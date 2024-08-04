@@ -1,5 +1,5 @@
-CMakeFiles/mujoco.dir/main.cpp.o: \
- /home/kaito/study/MuJoCo/mujoco_two_link/main.cpp \
+CMakeFiles/mujoco.dir/tracking.cpp.o: \
+ /home/kaito/study/MuJoCo/mujoco_two_link/tracking.cpp \
  /usr/include/stdc-predef.h \
  /home/kaito/.mujoco/mujoco-3.2.0/include/mujoco/mujoco.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
